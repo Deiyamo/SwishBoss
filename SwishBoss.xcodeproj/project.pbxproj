@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10318C2965DD89005512C6 /* AppDelegate.swift */; };
-		1C10318F2965DD89005512C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10318E2965DD89005512C6 /* SceneDelegate.swift */; };
-		1C1031912965DD89005512C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031902965DD89005512C6 /* ViewController.swift */; };
-		1C1031942965DD89005512C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1031922965DD89005512C6 /* Main.storyboard */; };
 		1C1031962965DD8A005512C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1031952965DD8A005512C6 /* Assets.xcassets */; };
 		1C1031992965DD8A005512C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1031972965DD8A005512C6 /* LaunchScreen.storyboard */; };
 		1C1031A42965DD8A005512C6 /* SwishBossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031A32965DD8A005512C6 /* SwishBossTests.swift */; };
 		1C1031AE2965DD8A005512C6 /* SwishBossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031AD2965DD8A005512C6 /* SwishBossUITests.swift */; };
 		1C1031B02965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031AF2965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift */; };
+		1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031BC2965E409005512C6 /* HomeViewController.swift */; };
+		1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1031BD2965E409005512C6 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 /* Begin PBXFileReference section */
 		1C1031892965DD89005512C6 /* SwishBoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwishBoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C10318C2965DD89005512C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C10318E2965DD89005512C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C1031902965DD89005512C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C1031932965DD89005512C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C1031952965DD8A005512C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1031982965DD8A005512C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C10319A2965DD8A005512C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +45,8 @@
 		1C1031A92965DD8A005512C6 /* SwishBossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwishBossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1031AD2965DD8A005512C6 /* SwishBossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwishBossUITests.swift; sourceTree = "<group>"; };
 		1C1031AF2965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwishBossUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C1031BC2965E409005512C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1C1031BD2965E409005512C6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1C10318C2965DD89005512C6 /* AppDelegate.swift */,
-				1C10318E2965DD89005512C6 /* SceneDelegate.swift */,
-				1C1031902965DD89005512C6 /* ViewController.swift */,
-				1C1031922965DD89005512C6 /* Main.storyboard */,
 				1C1031952965DD8A005512C6 /* Assets.xcassets */,
 				1C1031972965DD8A005512C6 /* LaunchScreen.storyboard */,
 				1C10319A2965DD8A005512C6 /* Info.plist */,
+				1C1031BC2965E409005512C6 /* HomeViewController.swift */,
+				1C1031BD2965E409005512C6 /* HomeViewController.xib */,
 			);
 			path = SwishBoss;
 			sourceTree = "<group>";
@@ -233,7 +230,7 @@
 			files = (
 				1C1031992965DD8A005512C6 /* LaunchScreen.storyboard in Resources */,
 				1C1031962965DD8A005512C6 /* Assets.xcassets in Resources */,
-				1C1031942965DD89005512C6 /* Main.storyboard in Resources */,
+				1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1031912965DD89005512C6 /* ViewController.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
-				1C10318F2965DD89005512C6 /* SceneDelegate.swift in Sources */,
+				1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C1031922965DD89005512C6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C1031932965DD89005512C6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C1031972965DD8A005512C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,9 +429,8 @@
 				INFOPLIST_FILE = SwishBoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,9 +438,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.timdev.SwishBoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -468,9 +458,8 @@
 				INFOPLIST_FILE = SwishBoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,9 +467,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.timdev.SwishBoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
