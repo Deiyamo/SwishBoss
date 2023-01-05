@@ -9,21 +9,25 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var deliveryTourService: DeliveryTourService = DeliveryTourJSONService() // OR ()
+    var deliveryTours: [DeliveryTour] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let address = Address(num: "15", street: "av jj", city: "paris", zipCode: "75011", country: "France")
+        
+        let id = 11
+        let deliverer = Deliverer(id: 1, firstName: "jean", lastName: "bob", birthDate: "oui", password: "", email: "oui", phone: "oui", profilePicture: Image(url: "oui", height: nil, width: nil), createdDate: Date())
+        var parcels = [Parcel(uuid: "uuid:)", deliveryAddress: address, billAddress: address, createdDate: Date(), clientName: "William le livreur tutuuut")]
+        //let tagsArr = tags.components(separatedBy: ",")
+        let deliveryTour = DeliveryTour(id: id, deliverer: deliverer, parcels: parcels, deliveryDate: Date())
+        self.deliveryTourService.add(deliveryTour: deliveryTour) { error in
+            guard error == nil else {
+                return
+            }
+        }
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

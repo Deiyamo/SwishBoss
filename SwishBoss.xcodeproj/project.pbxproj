@@ -15,6 +15,13 @@
 		1C1031B02965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031AF2965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift */; };
 		1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031BC2965E409005512C6 /* HomeViewController.swift */; };
 		1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1031BD2965E409005512C6 /* HomeViewController.xib */; };
+		1C1031C32965EB40005512C6 /* DeliveryTourJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031C22965EB40005512C6 /* DeliveryTourJSONService.swift */; };
+		1C1031C72965EBBC005512C6 /* DeliveryTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031C62965EBBC005512C6 /* DeliveryTour.swift */; };
+		1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */; };
+		1C1031CB2965EDA6005512C6 /* Deliverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031CA2965EDA6005512C6 /* Deliverer.swift */; };
+		1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031CC2965EE00005512C6 /* Parcel.swift */; };
+		1C1031D02965EF5E005512C6 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031CF2965EF5E005512C6 /* Address.swift */; };
+		1C1031D22965F1BB005512C6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031D12965F1BB005512C6 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		1C1031AF2965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwishBossUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C1031BC2965E409005512C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C1031BD2965E409005512C6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1C1031C22965EB40005512C6 /* DeliveryTourJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTourJSONService.swift; sourceTree = "<group>"; };
+		1C1031C62965EBBC005512C6 /* DeliveryTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTour.swift; sourceTree = "<group>"; };
+		1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTourService.swift; sourceTree = "<group>"; };
+		1C1031CA2965EDA6005512C6 /* Deliverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deliverer.swift; sourceTree = "<group>"; };
+		1C1031CC2965EE00005512C6 /* Parcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parcel.swift; sourceTree = "<group>"; };
+		1C1031CF2965EF5E005512C6 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		1C1031D12965F1BB005512C6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,9 @@
 		1C10318B2965DD89005512C6 /* SwishBoss */ = {
 			isa = PBXGroup;
 			children = (
+				1C1031C52965EB97005512C6 /* Services */,
+				1C1031C42965EB5F005512C6 /* Models */,
+				1C1031C02965E821005512C6 /* Platforms */,
 				1C10318C2965DD89005512C6 /* AppDelegate.swift */,
 				1C1031952965DD8A005512C6 /* Assets.xcassets */,
 				1C1031972965DD8A005512C6 /* LaunchScreen.storyboard */,
@@ -122,6 +139,42 @@
 				1C1031AF2965DD8A005512C6 /* SwishBossUITestsLaunchTests.swift */,
 			);
 			path = SwishBossUITests;
+			sourceTree = "<group>";
+		};
+		1C1031C02965E821005512C6 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				1C1031C12965E830005512C6 /* JSON */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		1C1031C12965E830005512C6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1C1031C22965EB40005512C6 /* DeliveryTourJSONService.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1C1031C42965EB5F005512C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C1031C62965EBBC005512C6 /* DeliveryTour.swift */,
+				1C1031CA2965EDA6005512C6 /* Deliverer.swift */,
+				1C1031CC2965EE00005512C6 /* Parcel.swift */,
+				1C1031CF2965EF5E005512C6 /* Address.swift */,
+				1C1031D12965F1BB005512C6 /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C1031C52965EB97005512C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1031C32965EB40005512C6 /* DeliveryTourJSONService.swift in Sources */,
+				1C1031D22965F1BB005512C6 /* Image.swift in Sources */,
+				1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
 				1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */,
+				1C1031CB2965EDA6005512C6 /* Deliverer.swift in Sources */,
+				1C1031C72965EBBC005512C6 /* DeliveryTour.swift in Sources */,
+				1C1031D02965EF5E005512C6 /* Address.swift in Sources */,
+				1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
