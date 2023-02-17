@@ -7,26 +7,14 @@
 
 import Foundation
 
-class Deliverer {
-    var id: Int
-    var firstName: String
-    var lastName: String
-    var birthDate: String
+struct Deliverer: Codable {
+    let id: Int
+    let firstName: String
+    let lastName: String
+    let birthDate: String
     var password: String = ""
-    var email: String
-    var phone: String
-    var profilePicture: Image
-    var createdDate: Date
-    
-    init(id: Int, firstName: String, lastName: String, birthDate: String, password: String, email: String, phone: String, profilePicture: Image, createdDate: Date) {
-        self.id = id
-        self.firstName = firstName
-        self.lastName = lastName
-        self.birthDate = birthDate
-        self.password = password
-        self.email = email
-        self.phone = phone
-        self.profilePicture = profilePicture
-        self.createdDate = createdDate
-    }
+    let email: String
+    let phone: String
+    let profilePicture: Image
+    let createdDate: Date
 }

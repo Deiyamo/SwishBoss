@@ -20,25 +20,21 @@ class DeliveryTourJSONService: DeliveryTourService {
     fileprivate func readDeliveryTours(_ completion: @escaping ([DeliveryTour]) -> Void) {
         do {
             let data = try Data(contentsOf: URL(string: self.filePath)!)
-            let json = try JSONSerialization.jsonObject(with: data)
-            guard let dicts = json as? [ [String: Any] ] else {
-                completion([])
-                return
-            }
-            completion(dicts.compactMap { dict in
-                return DeliveryTour.fromDictionary(dict: dict)
-            })
+            // transform json file content in [DeliveryTour]
+            let jsonData = try JSONDecoder().decode([DeliveryTour].self, from: data)
+            
+            completion(jsonData)
         } catch {
             completion([])
         }
     }
     
     fileprivate func writeDeliveryTours(deliveryTours: [DeliveryTour], completion: @escaping (Error?) -> Void) {
-        let dicts = deliveryTours.map { deliveryTour in
-            return deliveryTour.toDictionary()
-        }
         do {
-            let jsonData = try JSONSerialization.data(withJSONObject: dicts, options: .fragmentsAllowed)
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = [.prettyPrinted] // .sortedKeys
+            
+            let jsonData = try encoder.encode(deliveryTours)
             try jsonData.write(to: URL(string: self.filePath)!)
             completion(nil)
         } catch {
@@ -57,20 +53,44 @@ class DeliveryTourJSONService: DeliveryTourService {
         }
     }
     
-    func getBy() {
-        
+    func getBy(id: Int, _ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
+        self.readDeliveryTours { deliveryTours in
+            let tours = deliveryTours.filter { tours in
+                return tours.id == id
+            }
+            completion(nil, tours)
+        }
+    }
+    
+    func getBy(delivererName: String, _ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
+        self.readDeliveryTours { deliveryTours in
+            let tours = deliveryTours.filter { tours in
+                let deliverer = "\(tours.deliverer.firstName) \(tours.deliverer.lastName)".lowercased()
+                return deliverer.contains(delivererName.lowercased())
+            }
+            completion(nil, tours)
+        }
     }
     
     func getAll(_ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
-        
+        self.readDeliveryTours { deliveryTours in
+            completion(nil, deliveryTours)
+        }
     }
     
     func update() {
         
     }
     
-    func delete(_ completion: @escaping (Error?) -> Void) {
-        
+    func delete(id: Int, _ completion: @escaping (Error?) -> Void) {
+        self.readDeliveryTours { deliveryTours in
+            var updatedTours = deliveryTours
+            for(index, item) in updatedTours.enumerated() {
+                if (item.id == id) {
+                    updatedTours.remove(at: index)
+                }
+            }
+        }
     }
     
 }
