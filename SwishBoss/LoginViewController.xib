@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SwishBoss" customModuleProvider="target">
+            <connections>
+                <outlet property="loginLable" destination="i5M-Pr-FkT" id="BKe-oW-ORe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-01-niD">
+                    <rect key="frame" x="490" y="310" width="200" height="200"/>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="MkU-iU-XXc"/>
+                        <constraint firstAttribute="height" constant="200" id="leD-dV-F57"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="loginButton:" destination="-1" eventType="touchDown" id="gwf-Tt-Nok"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-rE-Gdp">
+                    <rect key="frame" x="563" y="545" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemMintColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QgY-rE-Gdp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9IL-0c-K5X"/>
+                <constraint firstItem="Sbd-01-niD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OCI-dk-hnW"/>
+                <constraint firstItem="QgY-rE-Gdp" firstAttribute="top" secondItem="Sbd-01-niD" secondAttribute="bottom" constant="35" id="OjO-85-Uzr"/>
+                <constraint firstItem="Sbd-01-niD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lUT-6g-EyL"/>
+            </constraints>
+            <point key="canvasLocation" x="105" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
