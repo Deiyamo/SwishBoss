@@ -26,6 +26,15 @@
 		3E7E2AA5299E97D500BD8C8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */; };
 		3E7E2AA6299E97D500BD8C8A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */; };
 		3E7E2AA8299EA40D00BD8C8A /* DelivererWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */; };
+		3EEAA06E29A17F5100367478 /* DelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA06C29A17F5100367478 /* DelivererViewController.swift */; };
+		3EEAA06F29A17F5100367478 /* DelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA06D29A17F5100367478 /* DelivererViewController.xib */; };
+		3EEAA07229A7DD1900367478 /* DelivererCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */; };
+		3EEAA07329A7DD1900367478 /* DelivererCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */; };
+		3EEAA07629A90F8E00367478 /* ModalCreateDelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */; };
+		3EEAA07729A90F8E00367478 /* ModalCreateDelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */; };
+		3EEAA07E29A92C8100367478 /* ModalModifyDelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */; };
+		3EEAA07F29A92C8100367478 /* ModalModifyDelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */; };
+		3EEAA08129AA3C0300367478 /* AttachmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08029AA3C0300367478 /* AttachmentFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +78,15 @@
 		3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererWebService.swift; sourceTree = "<group>"; };
+		3EEAA06C29A17F5100367478 /* DelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA06D29A17F5100367478 /* DelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererCollectionViewCell.swift; sourceTree = "<group>"; };
+		3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelivererCollectionViewCell.xib; sourceTree = "<group>"; };
+		3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCreateDelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCreateDelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModifyDelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalModifyDelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA08029AA3C0300367478 /* AttachmentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +148,14 @@
 				1C1031BD2965E409005512C6 /* HomeViewController.xib */,
 				3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */,
 				3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */,
+				3EEAA06C29A17F5100367478 /* DelivererViewController.swift */,
+				3EEAA06D29A17F5100367478 /* DelivererViewController.xib */,
+				3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */,
+				3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */,
+				3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */,
+				3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */,
+				3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */,
+				3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */,
 			);
 			path = SwishBoss;
 			sourceTree = "<group>";
@@ -176,6 +202,7 @@
 				1C1031CF2965EF5E005512C6 /* Address.swift */,
 				1C1031D12965F1BB005512C6 /* Image.swift */,
 				3E7E2AA1299E975000BD8C8A /* Token.swift */,
+				3EEAA08029AA3C0300367478 /* AttachmentFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,8 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7E2AA6299E97D500BD8C8A /* LoginViewController.xib in Resources */,
+				3EEAA07329A7DD1900367478 /* DelivererCollectionViewCell.xib in Resources */,
 				1C1031992965DD8A005512C6 /* LaunchScreen.storyboard in Resources */,
+				3EEAA06F29A17F5100367478 /* DelivererViewController.xib in Resources */,
 				1C1031962965DD8A005512C6 /* Assets.xcassets in Resources */,
+				3EEAA07F29A92C8100367478 /* ModalModifyDelivererViewController.xib in Resources */,
+				3EEAA07729A90F8E00367478 /* ModalCreateDelivererViewController.xib in Resources */,
 				1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,13 +353,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1031C32965EB40005512C6 /* DeliveryTourJSONService.swift in Sources */,
+				3EEAA08129AA3C0300367478 /* AttachmentFile.swift in Sources */,
+				3EEAA06E29A17F5100367478 /* DelivererViewController.swift in Sources */,
 				3E7E2AA2299E975000BD8C8A /* Token.swift in Sources */,
 				1C1031D22965F1BB005512C6 /* Image.swift in Sources */,
 				1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */,
+				3EEAA07229A7DD1900367478 /* DelivererCollectionViewCell.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
 				1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */,
 				1C1031CB2965EDA6005512C6 /* Deliverer.swift in Sources */,
+				3EEAA07E29A92C8100367478 /* ModalModifyDelivererViewController.swift in Sources */,
 				1C1031C72965EBBC005512C6 /* DeliveryTour.swift in Sources */,
+				3EEAA07629A90F8E00367478 /* ModalCreateDelivererViewController.swift in Sources */,
 				1C1031D02965EF5E005512C6 /* Address.swift in Sources */,
 				3E7E2AA8299EA40D00BD8C8A /* DelivererWebService.swift in Sources */,
 				1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */,

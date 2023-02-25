@@ -7,14 +7,8 @@
 
 import Foundation
 
-class Image {
-    var url: String
-    var height: Int?
-    var width: Int?
-    
-    init(url: String, height: Int?, width: Int?) {
-        self.url = url
-        self.height = height
-        self.width = width
-    }
+struct Image: Codable {
+    let url: String
+    let height: Int?
+    let width: Int?
 }
