@@ -63,13 +63,13 @@ class DeliveryTourJSONService: DeliveryTourService {
     }
     
     func getBy(delivererName: String, _ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
-        self.readDeliveryTours { deliveryTours in
-            let tours = deliveryTours.filter { tours in
-                let deliverer = "\(tours.deliverer.firstname) \(tours.deliverer.name)".lowercased()
-                return deliverer.contains(delivererName.lowercased())
-            }
-            completion(nil, tours)
-        }
+//        self.readDeliveryTours { deliveryTours in
+//            let tours = deliveryTours.filter { tours in
+////                let deliverer = "\(tours.deliverer.firstname) \(tours.deliverer.name)".lowercased()
+//                return deliverer.contains(delivererName.lowercased())
+//            }
+//            completion(nil, tours)
+//        }
     }
     
     func getAll(_ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {

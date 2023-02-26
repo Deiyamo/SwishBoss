@@ -8,9 +8,20 @@
 import Foundation
 
 struct Parcel: Codable {
-    let uuid: String
-    let deliveryAddress: Address
-    let billAddress: Address
-    let createdDate: Date
-    let clientName: String
+    let id: Int
+    let uuid: UUID
+    let addressStreet: String
+    let town: String
+    let zipCode: String
+    let country: String
+    let civility: String
+    let firstname: String
+    let lastname: String
+    let phone: String?
+    let email: String?
+    let urlProofDelivered: String?
+    var isDelivered: Bool
+    var dateDelivered: String?
+    let idTour: Int?
+    let order: Int?
 }

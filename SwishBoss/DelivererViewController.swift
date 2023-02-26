@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DelivererViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, ModalViewControllerDelegate{
+class DelivererViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ModalViewControllerDelegate{
     func modalViewControllerDidDismiss() {
         DelivererWebService.getItems(){err, success in
             guard err == nil else {
@@ -25,6 +25,15 @@ class DelivererViewController: UIViewController, UICollectionViewDataSource, UIC
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        // Set the width and height of the cell
+        let width: CGFloat = 150
+        let height: CGFloat = 150
+        
+        return CGSize(width: width, height: height)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return deliverers.rowCount
     }
@@ -40,9 +49,12 @@ class DelivererViewController: UIViewController, UICollectionViewDataSource, UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.cvDeliverer.dequeueReusableCell(withReuseIdentifier: "DelivererCollectionViewCell", for: indexPath) as! DelivererCollectionViewCell
         
-        guard let pictureString = deliverers.rows[indexPath.row].urlphoto else{
+        guard let defaultImage = UIImage(named: "default_user_g6rfhq") else{
             return cell
         }
+        cell.setIvPhoto(image: defaultImage)
+        
+        let pictureString = "https://swish.ancelotow.com/api/v1/download/deliverer/"+deliverers.rows[indexPath.row].uuid
         
         guard let pictureURL = URL(string: pictureString ) else {
             return cell
@@ -88,7 +100,7 @@ class DelivererViewController: UIViewController, UICollectionViewDataSource, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.cvDeliverer.backgroundColor = UIColor(red: 145.0/255, green: 183.0/255, blue: 225.0/255, alpha: 1)
+        self.cvDeliverer.backgroundColor =  UIColor(red: 31.0/255, green: 39.0/255, blue: 49.0/255, alpha: 1)
         self.cvDeliverer.dataSource = self
         self.cvDeliverer.delegate = self
         self.registerCollectionViewCells(identifier: "DelivererCollectionViewCell",uiCollection: self.cvDeliverer)

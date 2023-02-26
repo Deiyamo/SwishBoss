@@ -27,34 +27,45 @@
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Smh-YM-qe5">
                     <rect key="frame" x="415" y="106" width="135.5" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7f-Ut-wm6">
                     <rect key="frame" x="415" y="181" width="350" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="350" id="aCD-H8-149"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4P-BU-1OO">
                     <rect key="frame" x="415" y="331" width="350" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-gc-tcj">
                     <rect key="frame" x="415" y="256" width="350" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-Gd-3eF">
                     <rect key="frame" x="560.5" y="106" width="204.5" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-gI-Oc7">
-                    <rect key="frame" x="0.0" y="406" width="1180" height="34.5"/>
+                    <rect key="frame" x="0.0" y="406" width="1180" height="35"/>
                 </datePicker>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-Gz-vPC">
                     <rect key="frame" x="415" y="75" width="36.5" height="21"/>
@@ -87,7 +98,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Me-bH-eVl">
-                    <rect key="frame" x="415" y="450.5" width="350" height="180"/>
+                    <rect key="frame" x="415" y="465.5" width="350" height="180"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="180" id="rBh-pC-Lmg"/>
                     </constraints>
@@ -99,8 +110,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33y-ag-9cy">
-                    <rect key="frame" x="415" y="640.5" width="178" height="35"/>
+                    <rect key="frame" x="415" y="680.5" width="178" height="35"/>
                     <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Supprimer le Livreur"/>
                     <connections>
@@ -108,8 +120,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNW-Km-SeZ">
-                    <rect key="frame" x="604" y="640.5" width="161" height="35"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <rect key="frame" x="604" y="680.5" width="161" height="35"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.60784313725490191" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Modifier le Livreur"/>
                     <connections>
@@ -118,7 +131,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.15294117647058825" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Ock-gc-tcj" firstAttribute="top" secondItem="ecp-Xw-dhu" secondAttribute="bottom" constant="10" id="2c3-4w-sws"/>
                 <constraint firstItem="vNW-Km-SeZ" firstAttribute="trailing" secondItem="3Me-bH-eVl" secondAttribute="trailing" id="4eF-nc-xYV"/>
@@ -135,8 +148,8 @@
                 <constraint firstItem="fSx-Gz-vPC" firstAttribute="leading" secondItem="F7f-Ut-wm6" secondAttribute="leading" id="M8P-Ta-IR7"/>
                 <constraint firstItem="nQP-Gd-3eF" firstAttribute="trailing" secondItem="F7f-Ut-wm6" secondAttribute="trailing" id="N5g-16-atU"/>
                 <constraint firstItem="QAN-gI-Oc7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NaH-WR-cAB"/>
-                <constraint firstItem="vNW-Km-SeZ" firstAttribute="top" secondItem="3Me-bH-eVl" secondAttribute="bottom" constant="10" id="OPw-mP-mb4"/>
-                <constraint firstItem="3Me-bH-eVl" firstAttribute="top" secondItem="QAN-gI-Oc7" secondAttribute="bottom" constant="10" id="R8K-le-epf"/>
+                <constraint firstItem="vNW-Km-SeZ" firstAttribute="top" secondItem="3Me-bH-eVl" secondAttribute="bottom" constant="35" id="OPw-mP-mb4"/>
+                <constraint firstItem="3Me-bH-eVl" firstAttribute="top" secondItem="QAN-gI-Oc7" secondAttribute="bottom" constant="25" id="R8K-le-epf"/>
                 <constraint firstItem="F7f-Ut-wm6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ruc-ha-STQ"/>
                 <constraint firstItem="nQP-Gd-3eF" firstAttribute="leading" secondItem="Wys-OP-3BZ" secondAttribute="leading" id="VfY-9Z-Cyy"/>
                 <constraint firstItem="K4P-BU-1OO" firstAttribute="top" secondItem="Xbm-xC-KgS" secondAttribute="bottom" constant="10" id="WkG-Qp-Eva"/>
@@ -157,20 +170,14 @@
                 <constraint firstItem="QAN-gI-Oc7" firstAttribute="top" secondItem="A0j-fH-YUQ" secondAttribute="bottom" constant="10" id="tNU-CY-hnK"/>
                 <constraint firstItem="vNW-Km-SeZ" firstAttribute="leading" secondItem="33y-ag-9cy" secondAttribute="trailing" constant="10" id="vt7-Z8-5nz"/>
                 <constraint firstItem="7nK-gh-HLl" firstAttribute="top" secondItem="Smh-YM-qe5" secondAttribute="bottom" constant="10" id="xyA-GJ-vG1"/>
-                <constraint firstItem="33y-ag-9cy" firstAttribute="top" secondItem="3Me-bH-eVl" secondAttribute="bottom" constant="10" id="zsK-y6-dFs"/>
+                <constraint firstItem="33y-ag-9cy" firstAttribute="top" secondItem="3Me-bH-eVl" secondAttribute="bottom" constant="35" id="zsK-y6-dFs"/>
             </constraints>
             <point key="canvasLocation" x="80" y="20"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

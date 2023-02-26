@@ -38,10 +38,7 @@ class ModalModifyDelivererViewController: UIViewController {
         self.tf_firstname.text = deliverers.rows[index].firstname
         self.tf_email.text = deliverers.rows[index].email
         self.tf_login.text = deliverers.rows[index].login
-        
-        guard let pictureString = deliverers.rows[index].urlphoto else{
-            return
-        }
+        let pictureString = "https://swish.ancelotow.com/api/v1/download/deliverer/"+deliverers.rows[index].uuid
         
         guard let pictureURL = URL(string: pictureString ) else {
             return

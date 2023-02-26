@@ -4,12 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="SwishBoss" customModuleProvider="target">
             <connections>
+                <outlet property="btn_deliverer" destination="1Kg-rj-WMk" id="PuF-a4-eSt"/>
+                <outlet property="tv_tours" destination="Ok8-bi-a5D" id="HDL-Dc-gj6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,27 +19,57 @@
             <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ok8-bi-a5D">
+                    <rect key="frame" x="50" y="136" width="1080" height="561"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listes des tournées" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wig-nW-XiX">
+                    <rect key="frame" x="50" y="59" width="290" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kg-rj-WMk">
-                    <rect key="frame" x="513.5" y="665" width="153" height="35"/>
+                    <rect key="frame" x="959" y="732" width="171" height="38"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.60784313725490191" blue="0.76862745098039209" alpha="0.80404410456979514" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Liste des livreurs"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Liste des livreurs">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="btnGoToDelivererVC:" destination="-1" eventType="touchDown" id="TzH-DP-T7f"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBL-5E-Ksy">
+                    <rect key="frame" x="731" y="732" width="178" height="38"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.60784313725490191" blue="0.76862745098039209" alpha="0.80404410456979514" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Liste des preuves">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnGoToProofDeliveryVC:" destination="-1" eventType="touchUpInside" id="JBn-Db-syU"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemMintColor"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.26666666666666666" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Kg-rj-WMk" secondAttribute="bottom" constant="100" id="KCp-z1-exj"/>
-                <constraint firstItem="1Kg-rj-WMk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oha-0f-wNx"/>
+                <constraint firstItem="Ok8-bi-a5D" firstAttribute="leading" secondItem="wig-nW-XiX" secondAttribute="leading" id="15E-4h-eId"/>
+                <constraint firstItem="1Kg-rj-WMk" firstAttribute="leading" secondItem="vBL-5E-Ksy" secondAttribute="trailing" constant="50" id="2QO-4v-64j"/>
+                <constraint firstItem="1Kg-rj-WMk" firstAttribute="trailing" secondItem="Ok8-bi-a5D" secondAttribute="trailing" id="5MX-4b-dRk"/>
+                <constraint firstItem="vBL-5E-Ksy" firstAttribute="top" secondItem="1Kg-rj-WMk" secondAttribute="top" id="C42-5P-v5I"/>
+                <constraint firstItem="wig-nW-XiX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="Ejy-4j-jIo"/>
+                <constraint firstItem="1Kg-rj-WMk" firstAttribute="top" secondItem="Ok8-bi-a5D" secondAttribute="bottom" constant="35" id="JyN-AX-QE9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Kg-rj-WMk" secondAttribute="bottom" constant="30" id="KCp-z1-exj"/>
+                <constraint firstItem="wig-nW-XiX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="O2l-ot-S9d"/>
+                <constraint firstItem="Ok8-bi-a5D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k6N-vA-mGm"/>
+                <constraint firstItem="Ok8-bi-a5D" firstAttribute="top" secondItem="wig-nW-XiX" secondAttribute="bottom" constant="35" id="lRt-hs-jh5"/>
             </constraints>
-            <point key="canvasLocation" x="117" y="20"/>
+            <point key="canvasLocation" x="116.94915254237289" y="19.756097560975608"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

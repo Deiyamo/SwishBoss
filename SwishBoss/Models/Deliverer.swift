@@ -14,7 +14,7 @@ struct Deliverer: Codable {
     let firstname: String
     let name: String
     let birthday: String
-    var password: String? = ""
+    var password: Password?
     let email: String
     let urlphoto: String?
 }
@@ -22,4 +22,9 @@ struct Deliverer: Codable {
 struct Deliverers: Codable{
     let rowCount: Int
     let rows: [Deliverer]
+}
+
+struct Password: Codable{
+    let type: String
+    let data: [Int]
 }

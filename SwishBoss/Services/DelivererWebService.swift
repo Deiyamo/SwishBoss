@@ -15,6 +15,7 @@ class DelivererWebService{
         }
         
         var request = URLRequest(url: url)
+        request.setValue("Bearer \(Token.token)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let task = URLSession.shared.dataTask(with: request) { data, res, err in
@@ -53,8 +54,8 @@ class DelivererWebService{
         }
         
         var request = URLRequest(url: url)
-        //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        //request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("Bearer \(Token.token)", forHTTPHeaderField: "Authorization")
+        
         // Set the content type header to multipart form data
         let boundary = UUID().uuidString
         let contentType = "multipart/form-data; boundary=\(boundary)"
@@ -70,16 +71,7 @@ class DelivererWebService{
         bodyData.append(urlPhoto)
         bodyData.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
         
-//        var body = URLComponents()
-//        body.queryItems = [
-//            URLQueryItem(name: "name", value: name),
-//            URLQueryItem(name: "firstname", value: firstname),
-//            URLQueryItem(name: "email", value: email),
-//            URLQueryItem(name: "login", value: login),
-//            URLQueryItem(name: "password", value: password),
-//            URLQueryItem(name: "urlPhoto", value: urlPhoto),
-//            URLQueryItem(name: "birthday", value: birthday)
-//        ]
+
         let json: [String: Any] = ["name": name,
                                    "firstname": firstname,
                                    "email": email,
@@ -137,7 +129,7 @@ class DelivererWebService{
             return
         }
         var request = URLRequest(url: getURL)
-       
+        request.setValue("Bearer \(Token.token)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         request.httpMethod = "DELETE"
@@ -169,12 +161,13 @@ class DelivererWebService{
     
     class func modifyDeliverer(uuid: String, name: String, firstname: String, email: String, login: String, password: String, birthday: String, completion: @escaping (Error?, Bool?) -> Void){
         
-        let url = "http://localhost:3000/deliverer/"+uuid
+        let url = "https://swish.ancelotow.com/api/v1/deliverer/"+uuid
         
         guard let getURL = URL(string: url) else{
             return
         }
         var request = URLRequest(url: getURL)
+        request.setValue("Bearer \(Token.token)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         

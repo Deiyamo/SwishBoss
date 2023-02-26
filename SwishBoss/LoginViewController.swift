@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet var loginLable: UIView!
     @IBAction func loginButton(_ sender: Any) {
-        Token.token = "hello"
+        Token.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6bnVsbCwidXVpZCI6bnVsbCwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjc3MzU4MTE2LCJleHAiOjE2Nzc2MTczMTZ9.EDu2EV3iN04iQrYrSRlvF5y8yH4imgPTUKIlZ7tw9io"
         self.navigationController?.popToRootViewController(animated: true)
     }
     

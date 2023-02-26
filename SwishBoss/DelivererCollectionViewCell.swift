@@ -19,10 +19,10 @@ class DelivererCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         self.ivPhoto.contentMode = .scaleAspectFit
-        self.ivPhoto.layer.cornerRadius = 25
+//        self.ivPhoto.layer.cornerRadius = self.ivPhoto.frame.size.width / 2
 //        self.ivPhoto.layer.cornerRadius = self.ivPhoto.frame.size.width / 2
         self.ivPhoto.clipsToBounds = true
-        self.backgroundColor = UIColor(red: 145.0/255, green: 183.0/255, blue: 225.0/255, alpha: 1)
+        self.backgroundColor = UIColor(red: 31.0/255, green: 39.0/255, blue: 49.0/255, alpha: 1)
         
     }
     
