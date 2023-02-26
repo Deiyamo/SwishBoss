@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeliveryToursViewController" customModule="SwishBoss" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="yzv-gi-QhA" id="gRN-Ti-u8r"/>
+                <outlet property="deliveryToursTableView" destination="pXe-vg-H9A" id="qy4-cy-rkW"/>
+                <outlet property="mapView" destination="4lc-pN-7Zq" id="rTq-1W-iHp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lc-pN-7Zq">
+                    <rect key="frame" x="32" y="124" width="718" height="658"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4lc-pN-7Zq" secondAttribute="height" multiplier="359:329" id="dW4-jQ-ElS"/>
+                    </constraints>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-vg-H9A">
+                    <rect key="frame" x="814" y="209" width="348" height="573"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.26666668059999998" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="573" id="Gwg-gN-6g0"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colis à livrer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm7-K5-ZKl">
+                    <rect key="frame" x="814" y="127.5" width="190.5" height="44.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzv-gi-QhA">
+                    <rect key="frame" x="1114" y="124" width="48" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Qhg-PQ-e7I"/>
+                        <constraint firstAttribute="height" constant="34" id="SUG-fE-uIw"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" image="trash" catalog="system"/>
+                    <connections>
+                        <action selector="deleteTourButton:" destination="-1" eventType="touchUpInside" id="l6E-dn-IkU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.26666668059999998" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yzv-gi-QhA" secondAttribute="trailing" constant="32" id="CtV-OF-LS1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pXe-vg-H9A" secondAttribute="trailing" constant="32" id="INq-CC-qC0"/>
+                <constraint firstItem="pXe-vg-H9A" firstAttribute="top" secondItem="yzv-gi-QhA" secondAttribute="bottom" constant="51" id="Lvg-Qr-F8R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4lc-pN-7Zq" secondAttribute="bottom" constant="32" id="QLd-XH-JUX"/>
+                <constraint firstItem="rm7-K5-ZKl" firstAttribute="leading" secondItem="4lc-pN-7Zq" secondAttribute="trailing" constant="64" id="XLc-gh-2RR"/>
+                <constraint firstItem="4lc-pN-7Zq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="YDW-Ng-1Hg"/>
+                <constraint firstItem="4lc-pN-7Zq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="ZLm-bF-0gg"/>
+                <constraint firstItem="pXe-vg-H9A" firstAttribute="top" secondItem="rm7-K5-ZKl" secondAttribute="bottom" constant="37" id="htl-Q6-Ctw"/>
+                <constraint firstItem="pXe-vg-H9A" firstAttribute="leading" secondItem="4lc-pN-7Zq" secondAttribute="trailing" constant="64" id="iI5-Ik-mAM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pXe-vg-H9A" secondAttribute="bottom" constant="32" id="qow-3d-XzL"/>
+            </constraints>
+            <point key="canvasLocation" x="138.69346733668343" y="19.424460431654676"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="trash" catalog="system" width="117" height="128"/>
+    </resources>
+</document>

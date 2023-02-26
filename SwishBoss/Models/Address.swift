@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Address: Codable {
-    let num: String
+    // let num: String
     let street: String
     let city: String
     let zipCode: String

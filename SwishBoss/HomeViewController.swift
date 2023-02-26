@@ -9,22 +9,41 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var deliveryTourService: DeliveryTourService = DeliveryTourJSONService() // OR ()
+    var deliveryTourService: DeliveryTourService = DeliveryTourAPIService() // OR DeliveryTourJSONService
     var deliveryTours: [DeliveryTour] = []
+    
+    var deliveryTour: DeliveryTour!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let address = Address(num: "15", street: "av jj", city: "paris", zipCode: "75011", country: "France")
         
-        let id = 7
+        /*let id = 7
         let deliverer = Deliverer(id: 6, firstName: "sym", lastName: "paul", birthDate: "oui", password: "", email: "oui", phone: "oui", profilePicture: Image(url: "oui", height: 20, width: 20), createdDate: Date())
-        var parcels = [Parcel(uuid: "uuid:)", deliveryAddress: address, billAddress: address, createdDate: Date(), clientName: "William le livreur tutuuut")]
-        //let tagsArr = tags.components(separatedBy: ",")
-        let deliveryTour = DeliveryTour(id: id, deliverer: deliverer, parcels: parcels, deliveryDate: Date())
+        var parcels = [
+            Parcel(id: id, uuid: UUID(), addressStreet: "15 avenue Jean Jaures", town: "Suresnes", zipCode: "92150", country: "France", civility: "", firstname: "", lastname: "", phone: "", email: "", urlProofDelivered: "", isDelivered: false, idTour: 2, order: 3)
+        ]
+        //let tagsArr = tags.components(separatedBy: ",")*/
         
         
-        self.deliveryTourService.add(deliveryTour: deliveryTour) { error in
+        deliveryTourService.getBy(id: 2) { err, deliveryTour in
+            guard err == nil else {
+                print("ERROR \(err)")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.deliveryTour = deliveryTour
+                
+                let window = UIWindow(frame: UIScreen.main.bounds)
+                window.rootViewController = DeliveryToursViewController.newInstance(deliveryTour: self.deliveryTour)
+                window.makeKeyAndVisible()
+                self.window = window
+            }
+        }
+        
+        
+        /*self.deliveryTourService.add(deliveryTour: deliveryTour) { error in
             guard error == nil else {
                 return
             }
@@ -51,14 +70,15 @@ class HomeViewController: UIViewController {
             }
             print("GetBy NAME:")
             print(tours)
-        }
+        }*/
         
         /*self.deliveryTourService.delete(id: 7) { error in
             guard error == nil else {
                 return
             }
         }*/
+        
     }
 
-
+    var window: UIWindow?
 }

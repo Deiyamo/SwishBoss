@@ -53,19 +53,19 @@ class DeliveryTourJSONService: DeliveryTourService {
         }
     }
     
-    func getBy(id: Int, _ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
+    func getBy(id: Int, _ completion: @escaping (Error?, DeliveryTour?) -> Void) {
         self.readDeliveryTours { deliveryTours in
             let tours = deliveryTours.filter { tours in
                 return tours.id == id
             }
-            completion(nil, tours)
+            completion(nil, tours[0])
         }
     }
     
     func getBy(delivererName: String, _ completion: @escaping (Error?, [DeliveryTour]?) -> Void) {
         self.readDeliveryTours { deliveryTours in
             let tours = deliveryTours.filter { tours in
-                let deliverer = "\(tours.deliverer.firstName) \(tours.deliverer.lastName)".lowercased()
+                let deliverer = "\(tours.deliverer?.firstname ?? "") \(tours.deliverer?.name ?? "")".lowercased()
                 return deliverer.contains(delivererName.lowercased())
             }
             completion(nil, tours)

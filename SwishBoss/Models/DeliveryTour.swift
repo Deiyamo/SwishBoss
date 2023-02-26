@@ -9,7 +9,8 @@ import Foundation
 
 struct DeliveryTour: Codable {
     let id: Int
-    let deliverer: Deliverer
+    let deliverer: Deliverer?
     let parcels: [Parcel]
-    let deliveryDate: Date
+    let date: String
+    let state: String
 }

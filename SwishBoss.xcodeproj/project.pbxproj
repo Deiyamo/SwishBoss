@@ -22,6 +22,16 @@
 		1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031CC2965EE00005512C6 /* Parcel.swift */; };
 		1C1031D02965EF5E005512C6 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031CF2965EF5E005512C6 /* Address.swift */; };
 		1C1031D22965F1BB005512C6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1031D12965F1BB005512C6 /* Image.swift */; };
+		1C13382629A6995700729160 /* DeliveryToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13382429A6995700729160 /* DeliveryToursViewController.swift */; };
+		1C13382729A6995700729160 /* DeliveryToursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C13382529A6995700729160 /* DeliveryToursViewController.xib */; };
+		1C13382A29A6BB6400729160 /* ParcelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13382829A6BB6400729160 /* ParcelTableViewCell.swift */; };
+		1C13382B29A6BB6400729160 /* ParcelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C13382929A6BB6400729160 /* ParcelTableViewCell.xib */; };
+		1C13382F29A8B31C00729160 /* InfoParcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13382D29A8B31C00729160 /* InfoParcelViewController.swift */; };
+		1C13383029A8B31C00729160 /* InfoParcelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C13382E29A8B31C00729160 /* InfoParcelViewController.xib */; };
+		1C13383529AA7AFF00729160 /* DeliveryTourAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383429AA7AFF00729160 /* DeliveryTourAPIService.swift */; };
+		1C13383929AA90A000729160 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383829AA90A000729160 /* HttpMethod.swift */; };
+		1C13383B29AA941500729160 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383A29AA941500729160 /* APIRequest.swift */; };
+		1C13383D29AAB84100729160 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383C29AAB84100729160 /* AlertMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +71,16 @@
 		1C1031CC2965EE00005512C6 /* Parcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parcel.swift; sourceTree = "<group>"; };
 		1C1031CF2965EF5E005512C6 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		1C1031D12965F1BB005512C6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		1C13382429A6995700729160 /* DeliveryToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryToursViewController.swift; sourceTree = "<group>"; };
+		1C13382529A6995700729160 /* DeliveryToursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryToursViewController.xib; sourceTree = "<group>"; };
+		1C13382829A6BB6400729160 /* ParcelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableViewCell.swift; sourceTree = "<group>"; };
+		1C13382929A6BB6400729160 /* ParcelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParcelTableViewCell.xib; sourceTree = "<group>"; };
+		1C13382D29A8B31C00729160 /* InfoParcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoParcelViewController.swift; sourceTree = "<group>"; };
+		1C13382E29A8B31C00729160 /* InfoParcelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoParcelViewController.xib; sourceTree = "<group>"; };
+		1C13383429AA7AFF00729160 /* DeliveryTourAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTourAPIService.swift; sourceTree = "<group>"; };
+		1C13383829AA90A000729160 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		1C13383A29AA941500729160 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		1C13383C29AAB84100729160 /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +132,19 @@
 			isa = PBXGroup;
 			children = (
 				1C1031C52965EB97005512C6 /* Services */,
-				1C1031C42965EB5F005512C6 /* Models */,
 				1C1031C02965E821005512C6 /* Platforms */,
+				1C1031C42965EB5F005512C6 /* Models */,
+				1C13382C29A8B2F200729160 /* Components */,
 				1C10318C2965DD89005512C6 /* AppDelegate.swift */,
 				1C1031952965DD8A005512C6 /* Assets.xcassets */,
 				1C1031972965DD8A005512C6 /* LaunchScreen.storyboard */,
 				1C10319A2965DD8A005512C6 /* Info.plist */,
 				1C1031BC2965E409005512C6 /* HomeViewController.swift */,
 				1C1031BD2965E409005512C6 /* HomeViewController.xib */,
+				1C13382429A6995700729160 /* DeliveryToursViewController.swift */,
+				1C13382529A6995700729160 /* DeliveryToursViewController.xib */,
+				1C13382829A6BB6400729160 /* ParcelTableViewCell.swift */,
+				1C13382929A6BB6400729160 /* ParcelTableViewCell.xib */,
 			);
 			path = SwishBoss;
 			sourceTree = "<group>";
@@ -144,6 +169,7 @@
 		1C1031C02965E821005512C6 /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
+				1C13383329AA7AC900729160 /* API */,
 				1C1031C12965E830005512C6 /* JSON */,
 			);
 			path = Platforms;
@@ -165,6 +191,8 @@
 				1C1031CC2965EE00005512C6 /* Parcel.swift */,
 				1C1031CF2965EF5E005512C6 /* Address.swift */,
 				1C1031D12965F1BB005512C6 /* Image.swift */,
+				1C13383829AA90A000729160 /* HttpMethod.swift */,
+				1C13383C29AAB84100729160 /* AlertMessages.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +203,24 @@
 				1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1C13382C29A8B2F200729160 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1C13382D29A8B31C00729160 /* InfoParcelViewController.swift */,
+				1C13382E29A8B31C00729160 /* InfoParcelViewController.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1C13383329AA7AC900729160 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1C13383429AA7AFF00729160 /* DeliveryTourAPIService.swift */,
+				1C13383A29AA941500729160 /* APIRequest.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C13382729A6995700729160 /* DeliveryToursViewController.xib in Resources */,
+				1C13382B29A6BB6400729160 /* ParcelTableViewCell.xib in Resources */,
 				1C1031992965DD8A005512C6 /* LaunchScreen.storyboard in Resources */,
+				1C13383029A8B31C00729160 /* InfoParcelViewController.xib in Resources */,
 				1C1031962965DD8A005512C6 /* Assets.xcassets in Resources */,
 				1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */,
 			);
@@ -309,13 +358,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1031C32965EB40005512C6 /* DeliveryTourJSONService.swift in Sources */,
+				1C13383529AA7AFF00729160 /* DeliveryTourAPIService.swift in Sources */,
 				1C1031D22965F1BB005512C6 /* Image.swift in Sources */,
+				1C13382629A6995700729160 /* DeliveryToursViewController.swift in Sources */,
+				1C13382F29A8B31C00729160 /* InfoParcelViewController.swift in Sources */,
 				1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
+				1C13383929AA90A000729160 /* HttpMethod.swift in Sources */,
 				1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */,
 				1C1031CB2965EDA6005512C6 /* Deliverer.swift in Sources */,
 				1C1031C72965EBBC005512C6 /* DeliveryTour.swift in Sources */,
+				1C13382A29A6BB6400729160 /* ParcelTableViewCell.swift in Sources */,
 				1C1031D02965EF5E005512C6 /* Address.swift in Sources */,
+				1C13383B29AA941500729160 /* APIRequest.swift in Sources */,
+				1C13383D29AAB84100729160 /* AlertMessages.swift in Sources */,
 				1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9PGC2UQY7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwishBoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -514,6 +571,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9PGC2UQY7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwishBoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
