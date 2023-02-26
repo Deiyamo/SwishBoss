@@ -54,7 +54,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
             alert.view.addSubview(pickerView)
 
-            pickerView.frame = CGRect(x: 0, y: 30, width: alert.view.bounds.width, height: 500)
+            pickerView.frame = CGRect(x: 0, y: 30, width: alert.view.bounds.width - 20, height: 216 )
+            
 
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okAction)
