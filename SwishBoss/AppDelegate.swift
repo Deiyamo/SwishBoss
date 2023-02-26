@@ -7,7 +7,7 @@
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -16,13 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = HomeViewController() //UINavigationController(rootViewController: HomeViewController())
+        window.rootViewController = UINavigationController(rootViewController: HomeViewController())
         window.makeKeyAndVisible()
         self.window = window
         
         return true
     }
 
-
 }
-

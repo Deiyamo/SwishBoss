@@ -21,7 +21,7 @@ struct Parcel: Codable {
     let email: String?
     let urlProofDelivered: String?
     var isDelivered: Bool
-    var dateDelivered: String
+    var dateDelivered: String?
     let idTour: Int?
     var order: Int = 0
 }

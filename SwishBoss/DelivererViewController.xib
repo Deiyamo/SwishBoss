@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DelivererViewController" customModule="SwishBoss" customModuleProvider="target">
+            <connections>
+                <outlet property="cvDeliverer" destination="cem-Vj-9gI" id="2Dk-DU-cHi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp0-m4-AUO">
+                    <rect key="frame" x="930" y="59" width="200" height="35"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.60784313725490191" blue="0.76862745098039209" alpha="0.80404410456979514" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="AJOUTER UN LIVREUR"/>
+                    <connections>
+                        <action selector="btnAddDeliverer:" destination="-1" eventType="touchUpInside" id="3IM-j9-tsa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liste des Livreurs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvt-Mo-u5c">
+                    <rect key="frame" x="50" y="59" width="254" height="41"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cem-Vj-9gI">
+                    <rect key="frame" x="50" y="135" width="1080" height="575"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.15294117647058825" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AW3-Bw-Zw4">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="20"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.26666666666666666" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cvt-Mo-u5c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="1N1-hR-CLw"/>
+                <constraint firstItem="Cvt-Mo-u5c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="4Hp-qX-Hxg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lp0-m4-AUO" secondAttribute="trailing" constant="50" id="CFg-o3-ybc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cem-Vj-9gI" secondAttribute="bottom" constant="90" id="P2E-h3-MKc"/>
+                <constraint firstItem="cem-Vj-9gI" firstAttribute="top" secondItem="Cvt-Mo-u5c" secondAttribute="bottom" constant="35" id="V8X-n2-ZLo"/>
+                <constraint firstItem="cem-Vj-9gI" firstAttribute="leading" secondItem="Cvt-Mo-u5c" secondAttribute="leading" id="YKR-k8-lUv"/>
+                <constraint firstItem="lp0-m4-AUO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="c6J-Vy-8ys"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cem-Vj-9gI" secondAttribute="trailing" constant="50" id="hrC-Hu-9kh"/>
+                <constraint firstItem="cem-Vj-9gI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sqA-xa-NXC"/>
+            </constraints>
+            <point key="canvasLocation" x="79.322033898305094" y="19.756097560975608"/>
+        </view>
+    </objects>
+</document>

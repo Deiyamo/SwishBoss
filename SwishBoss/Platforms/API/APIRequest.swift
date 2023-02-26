@@ -18,7 +18,7 @@ class APIRequest {
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "GET"
-        
+
         return request
     }
     

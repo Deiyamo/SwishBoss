@@ -32,6 +32,27 @@
 		1C13383929AA90A000729160 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383829AA90A000729160 /* HttpMethod.swift */; };
 		1C13383B29AA941500729160 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383A29AA941500729160 /* APIRequest.swift */; };
 		1C13383D29AAB84100729160 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13383C29AAB84100729160 /* AlertMessages.swift */; };
+		3E7E2AA2299E975000BD8C8A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA1299E975000BD8C8A /* Token.swift */; };
+		3E7E2AA5299E97D500BD8C8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */; };
+		3E7E2AA6299E97D500BD8C8A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */; };
+		3E7E2AA8299EA40D00BD8C8A /* DelivererWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */; };
+		3EEAA06E29A17F5100367478 /* DelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA06C29A17F5100367478 /* DelivererViewController.swift */; };
+		3EEAA06F29A17F5100367478 /* DelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA06D29A17F5100367478 /* DelivererViewController.xib */; };
+		3EEAA07229A7DD1900367478 /* DelivererCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */; };
+		3EEAA07329A7DD1900367478 /* DelivererCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */; };
+		3EEAA07629A90F8E00367478 /* ModalCreateDelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */; };
+		3EEAA07729A90F8E00367478 /* ModalCreateDelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */; };
+		3EEAA07E29A92C8100367478 /* ModalModifyDelivererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */; };
+		3EEAA07F29A92C8100367478 /* ModalModifyDelivererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */; };
+		3EEAA08129AA3C0300367478 /* AttachmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08029AA3C0300367478 /* AttachmentFile.swift */; };
+		3EEAA08429AA817900367478 /* ToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08229AA817900367478 /* ToursTableViewCell.swift */; };
+		3EEAA08529AA817900367478 /* ToursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA08329AA817900367478 /* ToursTableViewCell.xib */; };
+		3EEAA08729AA987F00367478 /* DeliveryTourAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */; };
+		3EEAA08A29AA98DE00367478 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08929AA98DE00367478 /* APIRequest.swift */; };
+		3EEAA08D29AAC7FB00367478 /* ProofDeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08B29AAC7FB00367478 /* ProofDeliveryViewController.swift */; };
+		3EEAA08E29AAC7FB00367478 /* ProofDeliveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA08C29AAC7FB00367478 /* ProofDeliveryViewController.xib */; };
+		3EEAA09129AAD26600367478 /* ProofDeliveryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08F29AAD26600367478 /* ProofDeliveryCollectionViewCell.swift */; };
+		3EEAA09229AAD26600367478 /* ProofDeliveryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA09029AAD26600367478 /* ProofDeliveryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +102,27 @@
 		1C13383829AA90A000729160 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		1C13383A29AA941500729160 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		1C13383C29AAB84100729160 /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		3E7E2AA1299E975000BD8C8A /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererWebService.swift; sourceTree = "<group>"; };
+		3EEAA06C29A17F5100367478 /* DelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA06D29A17F5100367478 /* DelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivererCollectionViewCell.swift; sourceTree = "<group>"; };
+		3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelivererCollectionViewCell.xib; sourceTree = "<group>"; };
+		3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCreateDelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCreateDelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModifyDelivererViewController.swift; sourceTree = "<group>"; };
+		3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalModifyDelivererViewController.xib; sourceTree = "<group>"; };
+		3EEAA08029AA3C0300367478 /* AttachmentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentFile.swift; sourceTree = "<group>"; };
+		3EEAA08229AA817900367478 /* ToursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursTableViewCell.swift; sourceTree = "<group>"; };
+		3EEAA08329AA817900367478 /* ToursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursTableViewCell.xib; sourceTree = "<group>"; };
+		3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTourAPIService.swift; sourceTree = "<group>"; };
+		3EEAA08929AA98DE00367478 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3EEAA08B29AAC7FB00367478 /* ProofDeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofDeliveryViewController.swift; sourceTree = "<group>"; };
+		3EEAA08C29AAC7FB00367478 /* ProofDeliveryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProofDeliveryViewController.xib; sourceTree = "<group>"; };
+		3EEAA08F29AAD26600367478 /* ProofDeliveryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofDeliveryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3EEAA09029AAD26600367478 /* ProofDeliveryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProofDeliveryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +187,22 @@
 				1C13382529A6995700729160 /* DeliveryToursViewController.xib */,
 				1C13382829A6BB6400729160 /* ParcelTableViewCell.swift */,
 				1C13382929A6BB6400729160 /* ParcelTableViewCell.xib */,
+				3E7E2AA3299E97D500BD8C8A /* LoginViewController.swift */,
+				3E7E2AA4299E97D500BD8C8A /* LoginViewController.xib */,
+				3EEAA06C29A17F5100367478 /* DelivererViewController.swift */,
+				3EEAA06D29A17F5100367478 /* DelivererViewController.xib */,
+				3EEAA07029A7DD1900367478 /* DelivererCollectionViewCell.swift */,
+				3EEAA07129A7DD1900367478 /* DelivererCollectionViewCell.xib */,
+				3EEAA07429A90F8E00367478 /* ModalCreateDelivererViewController.swift */,
+				3EEAA07529A90F8E00367478 /* ModalCreateDelivererViewController.xib */,
+				3EEAA07C29A92C8100367478 /* ModalModifyDelivererViewController.swift */,
+				3EEAA07D29A92C8100367478 /* ModalModifyDelivererViewController.xib */,
+				3EEAA08229AA817900367478 /* ToursTableViewCell.swift */,
+				3EEAA08329AA817900367478 /* ToursTableViewCell.xib */,
+				3EEAA08B29AAC7FB00367478 /* ProofDeliveryViewController.swift */,
+				3EEAA08C29AAC7FB00367478 /* ProofDeliveryViewController.xib */,
+				3EEAA08F29AAD26600367478 /* ProofDeliveryCollectionViewCell.swift */,
+				3EEAA09029AAD26600367478 /* ProofDeliveryCollectionViewCell.xib */,
 			);
 			path = SwishBoss;
 			sourceTree = "<group>";
@@ -170,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				1C13383329AA7AC900729160 /* API */,
+				3EEAA08829AA98B200367478 /* API */,
 				1C1031C12965E830005512C6 /* JSON */,
 			);
 			path = Platforms;
@@ -193,6 +252,8 @@
 				1C1031D12965F1BB005512C6 /* Image.swift */,
 				1C13383829AA90A000729160 /* HttpMethod.swift */,
 				1C13383C29AAB84100729160 /* AlertMessages.swift */,
+				3E7E2AA1299E975000BD8C8A /* Token.swift */,
+				3EEAA08029AA3C0300367478 /* AttachmentFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */,
+				3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */,
+				3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +282,14 @@
 			children = (
 				1C13383429AA7AFF00729160 /* DeliveryTourAPIService.swift */,
 				1C13383A29AA941500729160 /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3EEAA08829AA98B200367478 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3EEAA08929AA98DE00367478 /* APIRequest.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -329,10 +400,18 @@
 			files = (
 				1C13382729A6995700729160 /* DeliveryToursViewController.xib in Resources */,
 				1C13382B29A6BB6400729160 /* ParcelTableViewCell.xib in Resources */,
+				3E7E2AA6299E97D500BD8C8A /* LoginViewController.xib in Resources */,
+				3EEAA07329A7DD1900367478 /* DelivererCollectionViewCell.xib in Resources */,
 				1C1031992965DD8A005512C6 /* LaunchScreen.storyboard in Resources */,
 				1C13383029A8B31C00729160 /* InfoParcelViewController.xib in Resources */,
+				3EEAA08E29AAC7FB00367478 /* ProofDeliveryViewController.xib in Resources */,
+				3EEAA06F29A17F5100367478 /* DelivererViewController.xib in Resources */,
 				1C1031962965DD8A005512C6 /* Assets.xcassets in Resources */,
+				3EEAA07F29A92C8100367478 /* ModalModifyDelivererViewController.xib in Resources */,
+				3EEAA07729A90F8E00367478 /* ModalCreateDelivererViewController.xib in Resources */,
+				3EEAA08529AA817900367478 /* ToursTableViewCell.xib in Resources */,
 				1C1031BF2965E409005512C6 /* HomeViewController.xib in Resources */,
+				3EEAA09229AAD26600367478 /* ProofDeliveryCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,21 +437,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1031C32965EB40005512C6 /* DeliveryTourJSONService.swift in Sources */,
+				3EEAA08129AA3C0300367478 /* AttachmentFile.swift in Sources */,
+				3EEAA06E29A17F5100367478 /* DelivererViewController.swift in Sources */,
+				3E7E2AA2299E975000BD8C8A /* Token.swift in Sources */,
 				1C13383529AA7AFF00729160 /* DeliveryTourAPIService.swift in Sources */,
 				1C1031D22965F1BB005512C6 /* Image.swift in Sources */,
 				1C13382629A6995700729160 /* DeliveryToursViewController.swift in Sources */,
 				1C13382F29A8B31C00729160 /* InfoParcelViewController.swift in Sources */,
 				1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */,
+				3EEAA07229A7DD1900367478 /* DelivererCollectionViewCell.swift in Sources */,
+				3EEAA08729AA987F00367478 /* DeliveryTourAPIService.swift in Sources */,
+				3EEAA08429AA817900367478 /* ToursTableViewCell.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
 				1C13383929AA90A000729160 /* HttpMethod.swift in Sources */,
 				1C1031BE2965E409005512C6 /* HomeViewController.swift in Sources */,
+				3EEAA08D29AAC7FB00367478 /* ProofDeliveryViewController.swift in Sources */,
 				1C1031CB2965EDA6005512C6 /* Deliverer.swift in Sources */,
+				3EEAA07E29A92C8100367478 /* ModalModifyDelivererViewController.swift in Sources */,
 				1C1031C72965EBBC005512C6 /* DeliveryTour.swift in Sources */,
+				3EEAA09129AAD26600367478 /* ProofDeliveryCollectionViewCell.swift in Sources */,
+				3EEAA07629A90F8E00367478 /* ModalCreateDelivererViewController.swift in Sources */,
 				1C13382A29A6BB6400729160 /* ParcelTableViewCell.swift in Sources */,
 				1C1031D02965EF5E005512C6 /* Address.swift in Sources */,
+				3E7E2AA8299EA40D00BD8C8A /* DelivererWebService.swift in Sources */,
 				1C13383B29AA941500729160 /* APIRequest.swift in Sources */,
 				1C13383D29AAB84100729160 /* AlertMessages.swift in Sources */,
 				1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */,
+				3EEAA08A29AA98DE00367478 /* APIRequest.swift in Sources */,
+				3E7E2AA5299E97D500BD8C8A /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
