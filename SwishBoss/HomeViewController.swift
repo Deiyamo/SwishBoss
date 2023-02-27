@@ -66,9 +66,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
 
             present(alert, animated: true, completion: nil)
-        }else{
+        } else {
             // TODO: timote
-            
+            let controller = DeliveryToursViewController.newInstance(deliveryTour: self.deliveryTours[indexPath.row])
+            navigationController?.pushViewController(controller, animated: true)
 
         }
     }

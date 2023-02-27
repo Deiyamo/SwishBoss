@@ -8,6 +8,7 @@
 import Foundation
 
 class DelivererWebService{
+    
     class func getItems(completion: @escaping (Error?, Deliverers?) -> Void){
     //
         guard let url = URL(string: "https://swish.ancelotow.com/api/v1/deliverer") else{

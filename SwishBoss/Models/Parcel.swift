@@ -23,5 +23,5 @@ struct Parcel: Codable {
     var isDelivered: Bool
     var dateDelivered: String?
     let idTour: Int?
-    var order: Int = 0
+    var order: Int? = 0
 }

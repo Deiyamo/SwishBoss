@@ -57,7 +57,7 @@ class ParcelTableViewCell: UITableViewCell {
         let printFormatter = DateFormatter()
         printFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         
-        if let date = getFormatter.date(from: parcel.dateDelivered) {
+        if let date = getFormatter.date(from: parcel.dateDelivered!) {
             labelDateDelivery.text = printFormatter.string(from: date)
         } else {
             labelDateDelivery.text = "Erreur format de date"

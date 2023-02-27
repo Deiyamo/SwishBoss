@@ -46,10 +46,41 @@ class InfoParcelViewController: UIViewController {
         if parcel.isDelivered {
             self.statusLabel.text = "Livré"
             self.idParcelLabel.text = "\(parcel.uuid)"
-            if let date = getFormatter.date(from: parcel.dateDelivered) {
+            if let date = getFormatter.date(from: parcel.dateDelivered!) {
                 dateDeliveredLabel.text = printFormatter.string(from: date)
             }
-            // self.proofImageView.image = UIImage(data: <#T##Data#>)
+            
+            
+            let pictureString = "https://swish.ancelotow.com/api/v1/download/parcel/\(parcel.uuid)"
+            
+            guard let pictureURL = URL(string: pictureString ) else {
+                return
+            }
+            
+            let session = URLSession.shared
+            
+            let task = session.dataTask(with: pictureURL) { (data, response, error) in
+                guard let imageData = data else {
+                    print("No image data received")
+                    return
+                }
+                
+                guard let image = UIImage(data: imageData) else {
+                    print("Invalid image data")
+                    return
+                }
+                
+                // Set the image property of the UIImageView to the downloaded image
+                DispatchQueue.main.async {
+                    self.proofImageView.image = image
+                    self.noProofLabel.isHidden = true
+                }
+                
+            }
+            task.resume()
+            
+            
+            
         } else {
             self.statusLabel.text = "En cours de livraison"
             self.dateDeliveredLabel.text = "xx/xx/xx xx:xx:xx"
@@ -58,6 +89,7 @@ class InfoParcelViewController: UIViewController {
         
         
     }
+
     
     
     @objc func didTapClose() {

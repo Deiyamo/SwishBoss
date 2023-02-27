@@ -17,8 +17,8 @@ struct Deliverer: Codable {
     var password: Password?
     let email: String
     let urlPhoto: String?
-    let currentLatitude: Float
-    let currentLongitude: Float
+    let currentLatitude: Float?
+    let currentLongitude: Float?
 }
 
 struct Deliverers: Codable{

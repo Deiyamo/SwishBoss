@@ -47,8 +47,6 @@
 		3EEAA08129AA3C0300367478 /* AttachmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08029AA3C0300367478 /* AttachmentFile.swift */; };
 		3EEAA08429AA817900367478 /* ToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08229AA817900367478 /* ToursTableViewCell.swift */; };
 		3EEAA08529AA817900367478 /* ToursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA08329AA817900367478 /* ToursTableViewCell.xib */; };
-		3EEAA08729AA987F00367478 /* DeliveryTourAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */; };
-		3EEAA08A29AA98DE00367478 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08929AA98DE00367478 /* APIRequest.swift */; };
 		3EEAA08D29AAC7FB00367478 /* ProofDeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08B29AAC7FB00367478 /* ProofDeliveryViewController.swift */; };
 		3EEAA08E29AAC7FB00367478 /* ProofDeliveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAA08C29AAC7FB00367478 /* ProofDeliveryViewController.xib */; };
 		3EEAA09129AAD26600367478 /* ProofDeliveryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAA08F29AAD26600367478 /* ProofDeliveryCollectionViewCell.swift */; };
@@ -117,8 +115,6 @@
 		3EEAA08029AA3C0300367478 /* AttachmentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentFile.swift; sourceTree = "<group>"; };
 		3EEAA08229AA817900367478 /* ToursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursTableViewCell.swift; sourceTree = "<group>"; };
 		3EEAA08329AA817900367478 /* ToursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursTableViewCell.xib; sourceTree = "<group>"; };
-		3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTourAPIService.swift; sourceTree = "<group>"; };
-		3EEAA08929AA98DE00367478 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		3EEAA08B29AAC7FB00367478 /* ProofDeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofDeliveryViewController.swift; sourceTree = "<group>"; };
 		3EEAA08C29AAC7FB00367478 /* ProofDeliveryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProofDeliveryViewController.xib; sourceTree = "<group>"; };
 		3EEAA08F29AAD26600367478 /* ProofDeliveryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofDeliveryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -228,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				1C13383329AA7AC900729160 /* API */,
-				3EEAA08829AA98B200367478 /* API */,
 				1C1031C12965E830005512C6 /* JSON */,
 			);
 			path = Platforms;
@@ -263,7 +258,6 @@
 			children = (
 				1C1031C82965EBE7005512C6 /* DeliveryTourService.swift */,
 				3E7E2AA7299EA40D00BD8C8A /* DelivererWebService.swift */,
-				3EEAA08629AA987F00367478 /* DeliveryTourAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -282,14 +276,6 @@
 			children = (
 				1C13383429AA7AFF00729160 /* DeliveryTourAPIService.swift */,
 				1C13383A29AA941500729160 /* APIRequest.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		3EEAA08829AA98B200367478 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				3EEAA08929AA98DE00367478 /* APIRequest.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -446,7 +432,6 @@
 				1C13382F29A8B31C00729160 /* InfoParcelViewController.swift in Sources */,
 				1C1031C92965EBE7005512C6 /* DeliveryTourService.swift in Sources */,
 				3EEAA07229A7DD1900367478 /* DelivererCollectionViewCell.swift in Sources */,
-				3EEAA08729AA987F00367478 /* DeliveryTourAPIService.swift in Sources */,
 				3EEAA08429AA817900367478 /* ToursTableViewCell.swift in Sources */,
 				1C10318D2965DD89005512C6 /* AppDelegate.swift in Sources */,
 				1C13383929AA90A000729160 /* HttpMethod.swift in Sources */,
@@ -463,7 +448,6 @@
 				1C13383B29AA941500729160 /* APIRequest.swift in Sources */,
 				1C13383D29AAB84100729160 /* AlertMessages.swift in Sources */,
 				1C1031CD2965EE00005512C6 /* Parcel.swift in Sources */,
-				3EEAA08A29AA98DE00367478 /* APIRequest.swift in Sources */,
 				3E7E2AA5299E97D500BD8C8A /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

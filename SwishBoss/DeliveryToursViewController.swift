@@ -56,7 +56,7 @@ class DeliveryToursViewController: UIViewController {
     class func newInstance(deliveryTour: DeliveryTour) -> DeliveryToursViewController {
         let controller = DeliveryToursViewController()
         controller.deliveryTour = deliveryTour
-        controller.deliveryTour.parcels.sorted { $0.order < $1.order }
+        controller.deliveryTour.parcels.sorted { $0.order! < $1.order! }
         return controller
     }
     
@@ -87,7 +87,7 @@ class DeliveryToursViewController: UIViewController {
         
         // 242 Rue du Faubourg Saint-Antoine 75012 Paris"
         let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(CLLocation(latitude: CLLocationDegrees(deliverer!.currentLatitude), longitude: CLLocationDegrees(deliverer!.currentLongitude))) { placemmarks, err in
+        geocoder.reverseGeocodeLocation(CLLocation(latitude: CLLocationDegrees(deliverer!.currentLatitude!), longitude: CLLocationDegrees(deliverer!.currentLongitude!))) { placemmarks, err in
             guard let placemmarks = placemmarks else {
                 return
             }
@@ -171,7 +171,7 @@ extension DeliveryToursViewController: UITableViewDataSource, UITableViewDelegat
         let deliverer = self.deliveryTour.deliverer
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PARCEL", for: indexPath) as! ParcelTableViewCell
-        let delivererPosition = CLLocationCoordinate2D(latitude: CLLocationDegrees(deliverer!.currentLatitude), longitude: CLLocationDegrees(deliverer!.currentLongitude))
+        let delivererPosition = CLLocationCoordinate2D(latitude: CLLocationDegrees(deliverer!.currentLatitude!), longitude: CLLocationDegrees(deliverer!.currentLongitude!))
         cell.redraw(parcel: parcel, delivererPosition: delivererPosition)
         return cell
     }
